@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="25" height="25">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #dadada } 
+	</style>
+	<path id="закрыть" class="shp0" d="M24.01,2.09l-2.09,-2.09l-9.91,9.91l-9.91,-9.91l-2.09,2.09l9.91,9.91l-9.91,9.91l2.09,2.09l9.91,-9.91l9.91,9.91l2.09,-2.09l-9.91,-9.91z" />
+</svg>

@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24" width="30" height="24">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #dadada } 
+	</style>
+	<path id="Фигура 4" class="shp0" d="M30,4v-3h-29v3z" />
+	<path id="Фигура 4 копия" class="shp0" d="M30,14v-3h-29v3z" />
+	<path id="Фигура 4 копия 2" class="shp0" d="M30,24v-3h-29v3z" />
+</svg>

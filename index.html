@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Главная | D&A Catering</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="application/xhtml+xml">
+    <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        window.onscroll = function () {
+            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+            if (document.documentElement.clientWidth > 425) {
+
+                if (scrolled === 0) {
+                    document.getElementById('showInScroll').style.height = '150px';
+                    document.getElementById('imageIs').style.height = '100px';
+                }
+                else {
+                    document.getElementById('showInScroll').style.height = '90px';
+                    document.getElementById('imageIs').style.height = '60px';
+                }
+            }
+
+        }
+        window.onload = function () {
+            var element = document.getElementById('numberPhone');
+            var element1 = document.getElementById('numberPhone1');
+            var element2 = document.getElementById('numberPhone2')
+            var element3 = document.getElementById('nameForm');
+            var element4 = document.getElementById('nameForm2');
+            var element5 = document.getElementById('contact_name');
+            var element6 = document.getElementById('contact_email');
+            
+            var mask = new IMask(element, {
+                mask: '+{7}(000)000-00-00'
+            });
+            mask.rawValue = '999-12-12-123';
+            var mask = new IMask(element1, {
+                mask: '+{7}(000)000-00-00'
+            });
+            mask.rawValue = '999-12-12-123';
+            var mask = new IMask(element2, {
+                mask: '+{7}(000)000-00-00'
+            });
+            mask.rawValue = '999-12-12-123';
+            var mask = new IMask(element3, {
+                mask: /^[a-zA-Zа-яА-ЯЁё]+$/
+            });
+            var mask = new IMask(element4, {
+                mask: /^[a-zA-Zа-яА-ЯЁё]+$/
+            });
+            var mask = new IMask(element5, {
+                mask: /^[a-zA-Zа-яА-ЯЁё]+$/
+            });
+            var mask = new IMask(element6, {
+                mask: /\w/
+            });
+             //4\.[0-3]
+if(/Android [4-6]/.test(navigator.appVersion)) {
+   window.addEventListener("resize", function() {
+      if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA") {
+         window.setTimeout(function() {
+            document.activeElement.scrollIntoViewIfNeeded();
+         },0);
+      }
+   })
+}}
+
+        
+        function goClose() {
+            document.getElementById('backVideo').style.opacity = '0';
+            document.getElementById('backVideo').style.zIndex = '0';
+            document.getElementById('backVideo').style.display = 'none';
+            var video = document.getElementById('videoOne');
+            video.pause();
+            video.currentTime = 0;
+            var video = document.getElementById('videoOne');
+            video.pause();
+            video.currentTime = 0;
+            var video = document.getElementById('videoTwo');
+            video.pause();
+            video.currentTime = 0;
+            var video = document.getElementById('videoThree');
+            video.pause();
+            video.currentTime = 0;
+            var video = document.getElementById('videoFour');
+            video.pause();
+            video.currentTime = 0;
+        }
+    </script>
+</head>
+
+<body  style="overflow-y: hidden">
+  <div class="preloader" style="padding: 30px; width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    right: 0; bottom: 0; transition: all 0.5s ease; opacity: 1; background-color: #000000; z-index: 1000000; display: flex; align-items: center; justify-content: center;">
+        <p style="font-size:24px; color: #ffffff; font-weight: bold;">Страница загружена на <span id="preloader_percent">0</span>%</p>
+    </div>
+    <div class="nav" id="showInScroll">
+        <ul class="links">
+            <li class="dropdown-services main">
+                <a class="dropdown-services-btn">Наши услуги <span class="caret"></span></a>
+                <div class="dropdown-services-menu">
+                    <ul>
+                        <li><a class="onpage-link" href="#service-1">Банкет</a></li>
+                        <li><a class="onpage-link" href="#service-2">Гала-ужин</a></li>
+                        <li><a class="onpage-link" href="#service-3">Фуршет</a></li>
+                        <li><a class="onpage-link" href="#service-4">Барбекю</a></li>
+                        <li><a class="onpage-link" href="#service-5">Candy bar</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dropdown-services second">
+                <a>Фишки <span class="caret"></span></a>
+                <div class="dropdown-services-menu">
+                    <ul>
+                        <li><a class="onpage-link" href="#also">Food show</a></li>
+                        <li><a class="onpage-link" href="#also">Food pairing</a></li>
+                        <li><a class="onpage-link" href="#also">Мастер-класс</a></li>
+                        <li><a class="onpage-link" href="#also-4">Анимационные станции</a></li>
+                        <li><a class="onpage-link" href="#also-4">Устричный бар</a></li>
+                        <li><a class="onpage-link" href="#also-4">Коктейльный бар</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hidden-xs"><a class="onpage-link" href="#about">О компании</a></li>
+            <li class="hidden-xs nav-logo"><img src="img/logo.svg" style="transition-duration: 2s;" id="imageIs" height="100px"
+                    alt=""></li>
+            <li><a class="onpage-link" href="#own">Производство</a></li>
+            <li><a class="onpage-link" href="#case">Кейсы</a></li>
+            <li class="witdh-inline"><a class="mob-link left-mobile" href="tel:+7(927)425-25-25">+7 (927) 425-25-25</a>
+                <a class="email-link" style="text-transform: none" href="mailto:catering@chef2.ru">catering@chef2.ru</a></li>
+            <li class="visible-xs">
+                <p>Телефон:</p> <a class="mob-link" href="tel:+7(927)425-25-25">+7 (927) 425-25-25</a>
+            </li>
+            <li class="visible-xs">
+                <p>Почта:</p> <a class="mob-link" style="text-transform: none;" href="mailto: catering@chef2.ru">catering@chef2.ru</a>
+            </li>
+            <li class="visible-xs"><a class="offer-btn modal-opn-order">Заказать звонок</a></li>
+            <li class="visible-xs">
+                <div class="social">
+                    <a target="_blank" href="https://www.facebook.com/diakov.agureev.catering" class="facebook"><i
+                            class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/diakov_agureev_catering/" class="instagram"><i
+                            class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://vk.com/diakov_agureev_catering" class="vk"><i class="fa fa-vk"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a class="bars-btn"><img class="bars" src="img/bars.svg" /><img class="close-btn" src="img/close.svg" /></a>
+    <section id="main">
+        <div class="swiper-container">
+            <div class="mobile-main-info visible-xs">
+                <ul>
+                    <li class="logo-li"><a class="onpage-link" href="#main"><img src="img/logo.svg" /></a>
+                    </li>
+                    <li>
+                        <h4><a href="tel: +7 (927) 425-25-25">+7 (927) 425-25-25</a></h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1">
+                    <div class="overlay">
+                        <h1>Организация питания <br /> в любой точке мира</h1>
+                        <a class="offer-btn modal-opn-order">Заказать кейтеринг</a>
+                        <div class="social">
+                            <a target="_blank" href="https://www.facebook.com/diakov.agureev.catering" class="facebook"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/diakov_agureev_catering/" class="instagram"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a target="_blank" href="https://vk.com/diakov_agureev_catering" class="vk"><i class="fa fa-vk"></i></a>
+                            <a target="_blank" href="https://pinterest.com/dacatering" class="vk"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-2">
+                    <div class="overlay">
+                        <h1>Бесплатная дегустация <br /> вашего меню</h1>
+                        <a class="offer-btn modal-opn-order">Узнать условия</a>
+                        <div class="social">
+                            <a target="_blank" href="https://www.facebook.com/diakov.agureev.catering" class="facebook"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/diakov_agureev_catering/" class="instagram"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a target="_blank" href="https://vk.com/diakov_agureev_catering" class="vk"><i class="fa fa-vk"></i></a>
+                            <a target="_blank" href="https://pinterest.com/dacatering" class="vk"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next main-next"></div>
+            <div class="swiper-button-prev main-prev"></div>
+        </div>
+    </section>
+    <section id="offer">
+        <h2 style="z-index: 1;">Создадим ресторан там, где вы захотите<br>Закажите готовое меню на лучших условиях</h2>
+        <a class="offer-btn modal-opn-order">Скачать презентацию</a>
+        <div class="petrushka wow fadeInLeft"><img src="img/img-left.png" /></div>
+        <div class="basilik wow fadeInRight"></div>
+    </section>
+    <section id="about">
+        <div class="info swiper-container">
+            <div class="container swiper-wrapper">
+                <div class="swiper-slide slide-1 all">
+                    <div class="col-md-6" style="background-image: none;">
+                        <img src="">
+                    </div>
+                    <div class="col-md-6 text-block" style="background-position: right bottom;">
+                        <h2>О нас:</h2>
+                        <ul>
+                            <li>— Провели более 850 мероприятий с 2016 года</li>
+                            <li>— Работали с компаниями Татнефть, Red Bull,<br>Унистрой, ICL, Билайн, Estel и др</li>
+                            <li>— Собственное производство позволяет принять<br>мероприятие до 5000 гостей</li>
+                            <li>— Основателями являются президенты<br>Ассоциации поваров республики Татарстан</li>
+                        </ul>
+                        <div class="buttons">
+                            <div class="swiper-button-prev about-prev"></div>
+                            <div class="swiper-pagination about-pag"></div>
+                            <div class="swiper-button-next about-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-2 diakov">
+                    <div class="col-md-6">
+                        <img src="">
+                    </div>
+                    <div class="col-md-6 text-block">
+                        <h2>Дмитрий Дьяков</h2>
+                        <ul>
+                            <li>— Управляющий партнер Chef2 Group</li>
+                            <li>— Президент Ассоциации кулинаров <br /> Республики Татарстан</li>
+                            <li>— Член всемирной ассоциации <br /> шеф-поваров WACS</li>
+                            <li>— Член национальной ассоциации <br /> кулинаров</li>
+                            <li>— Член клуба кулинаров в <br /> регионе Veneto (Италия)</li>
+                        </ul>
+                        <div class="buttons">
+                            <div class="swiper-button-prev about-prev"></div>
+                            <div class="swiper-pagination about-pag"></div>
+                            <div class="swiper-button-next about-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-3 agureev">
+                    <div class="col-md-6">
+                        <img src="">
+                    </div>
+                    <div class="col-md-6 text-block">
+                        <h2>Максим Агуреев</h2>
+                        <ul>
+                            <li>— Управляющий партнер Chef2 Group</li>
+                            <li>— Президент Лиги Юниоров при Ассоциации <br /> кулинаров Республики Татарстан</li>
+                            <li>— Член всемирной ассоциации <br /> шеф-поваров WACS</li>
+                            <li>— Член национальной ассоциации <br /> кулинаров</li>
+                        </ul>
+                        <div class="buttons">
+                            <div class="swiper-button-prev about-prev"></div>
+                            <div class="swiper-pagination about-pag"></div>
+                            <div class="swiper-button-next about-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="own">
+        <div class="container">
+            <div class="row text-center">
+                <h2>собственное производство<br><span>267 кв м</span></h2>
+                <p>Наши возможности позволяют реализовать любую кулинарную идею. Производство сделано по всем нормам
+                    СанПиН</p>
+            </div>
+        </div>
+        <div class="container swiper-container lil-photo">
+            <div class="row swiper-wrapper">
+                <div class="own-photo own-1 swiper-slide">
+                    <a class="overlay" data-number="0"><img src="img/Icons/magnifying-glass.svg" /></a>
+                </div>
+                <div class="own-photo own-2 swiper-slide">
+                    <a class="overlay" data-number="1"><img src="img/Icons/magnifying-glass.svg" /></a>
+                </div>
+                <div class="own-photo own-3 swiper-slide">
+                    <a class="overlay" data-number="2"><img src="img/Icons/magnifying-glass.svg" /></a>
+                </div>
+                <div class="own-photo own-4 swiper-slide">
+                    <a class="overlay" data-number="3"><img src="img/Icons/magnifying-glass.svg" /></a>
+                </div>
+                <div class="own-photo own-5 swiper-slide">
+                    <a class="overlay" data-number="4"><img src="img/Icons/magnifying-glass.svg" /></a>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="swiper-button-prev own-prev"></div>
+                <div class="swiper-pagination own-pag"></div>
+                <div class="swiper-button-next own-next"></div>
+            </div>
+        </div>
+        <div class="photo-modal" id="own-gallery">
+            <div class="photo-modal-container">
+                <div class="photo-modal-cls">&times;</div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1"><img src="img/own-1.jpg" /></div>
+                        <div class="swiper-slide slide-2"><img src="img/own-2.jpg" /></div>
+                        <div class="swiper-slide slide-3"><img src="img/own-3.jpg" /></div>
+                        <div class="swiper-slide slide-4"><img src="img/own-4.jpg" /></div>
+                        <div class="swiper-slide slide-5"><img src="img/own-5.jpg" /></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev photo-modal-prev"></div>
+                <div class="swiper-button-next photo-modal-next"></div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="header">
+                <h2>Наши услуги</h2>
+            </div>
+            <div class="list">
+                <div class="row service-1 wow fadeInUp" id="service-1">
+                    <div class="col-md-6 col-sm-6 left-block">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 right-block">
+                        <h3>Банкет</h3>
+                        <p>Банкет - крупное событие, которое требует особенного внимания. Во время праздничного банкета
+                            все
+                            должно быть идеально – сервировка, выбор и подача блюд.</p>
+                        <a class="download-btn open_modal" href="docs/banket.pdf" target="_blank">Скачать меню</a>
+                    </div>
+                </div>
+                <div class="row service-2 wow fadeInUp" id="service-2">
+                    <div class="col-md-6 col-sm-6 left-block">
+                        <h3>Гала-ужин</h3>
+                        <p>Для наиболее значимых событий, afterparty вам подойдет гала-ужин. Изысканные блюда,
+                            дизайнерская
+                            посуда и высококлассное обслуживание - все продумано до мелочей. Это будет торжество,
+                            которое
+                            никого не оставит равнодушным.</p>
+                        <a class="download-btn open_modal" href="#" target="_blank">Скачать меню</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 right-block">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="row service-3 wow fadeInUp" id="service-3">
+                    <div class="col-md-6 col-sm-6 left-block">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 right-block">
+                        <h3>Фуршет</h3>
+                        <p>Отличное решение для деловой встречи или корпоратива! Офис превращается в настоящий ресторан
+                            с
+                            изящной подачей и великолепным обслуживанием. А гости наслаждаются легкими закусками,
+                            салатами,
+                            десертами и напитками.</p>
+                        <a class="download-btn open_modal" href="docs/furshet.pdf" target="_blank">Скачать меню</a>
+                    </div>
+                </div>
+                <div class="row service-4 wow fadeInUp" id="service-4">
+                    <div class="col-md-6 col-sm-6 left-block">
+                        <h3>Барбекю</h3>
+                        <p>Вне зависимости от повода,корпоративный или личный, все любят барбекю! Сочное мясо,
+                            нежнейшая
+                            рыба, пикантные овощи - теперь любителям всего этого не придется становиться к мангалу. Мы
+                            сделаем это за Вас!</p>
+                        <a class="download-btn open_modal" href="docs/BBQ.pdf" target="_blank">Скачать меню</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 right-block">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class=" row service-5 wow fadeInUp" id="service-5">
+                    <div class="col-md-6 col-sm-6 left-block">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 right-block ">
+                        <h3>Candy Bar</h3>
+                        <p>Организация кэнди-бара – предмет гордости "D&A catering". Мы прикладываем все усилия, чтобы
+                            воссоздать легендарный “Candy Bar” — сладкий буфет или стол с пирожными и сладкими
+                            закусками.</p>
+                        <a class="download-btn open_modal">Скачать меню</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="also">
+        <div class="container">
+            <div class="header">
+                <h2>Наши фишки</h2>
+            </div>
+        </div>
+        <div class="container swiper-container">
+            <div class="row swiper-wrapper">
+                <div class="col-md-4 swiper-slide">
+                    <div class="background also-1">
+                        <div class="overlay">
+                            <h2>Food Show</h2>
+                            <p>Готовы к настоящему кулинарному шоу? Во время мероприятия вас ждет зрелищное
+                                представление,
+                                на котором шеф ловко справится с блюдами. Мы выставим кухню на показ!</p>
+                            <a class="offer-btn open_modal">Заказать</a>
+                        </div>
+                        <h4>Food Show</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 swiper-slide">
+                    <div class="background also-2">
+                        <div class="overlay">
+                            <h2>Food Pairing</h2>
+                            <p>Мы приготовили для вас нечто особенное. Food Pairing - это наука о том, как необычные
+                                сочетания могут раскрыть вкус блюда. Идеальная swiper-wrapperгармония напитков и еды
+                                никого
+                                не оставит
+                                равнодушным.</p>
+                            <a class="offer-btn modal-opn-order">Заказать</a>
+                        </div>
+                        <h4>Food Pairing</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 swiper-slide">
+                    <div class="background also-3">
+                        <div class="overlay">
+                            <h2>Мастер-класс</h2>
+                            <p>Хотите провести мероприятие насыщенно? Наши захватывающие мастер-классы откроют секреты
+                                лучших блюд. Вы станете участниками рождения настоящих шедевров кулинарии.</p>
+                            <a class="offer-btn modal-opn-order">Заказать</a>
+                        </div>
+                        <h4>Мастер-класс</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 swiper-slide" id="also-4">
+                    <div class="background also-4">
+                        <div class="overlay">
+                            <h2>Анимационные станции</h2>
+                            <p>Ищете неординарное развлечение для гостей? С помощью анимационной станции, можно
+                                превратить
+                                любой праздник в увлекательную историю. В процессе шоу создается особая обстановка
+                                доверия.</p>
+                            <a class="offer-btn modal-opn-order">Заказать</a>
+                        </div>
+                        <h4>Анимационные станции</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 swiper-slide">
+                    <div class="background also-5">
+                        <div class="overlay">
+                            <h2>Устричный бар</h2>
+                            <p>Мы знаем как добавить изюминку в ваш вечер! Попробуйте устричный бар. Стилизованный и
+                                эффектный — приятно удивит гостей и задаст тон любому событию.</p>
+                            <a class="offer-btn modal-opn-order">Заказать</a>
+                        </div>
+                        <h4>Устричный бар</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 swiper-slide">
+                    <div class="background also-6">
+                        <div class="overlay">
+                            <h2>Коктейльный бар</h2>
+                            <p>Хотите превратить фуршет в светское мероприятие? Тогда Вам подойдет коктейль! Закуски и
+                                напитки разносятся официантами и предлагаются каждому гостю персонально. Восторженные
+                                гости
+                                будут долго вспоминать Ваше мероприятие! </p>
+                            <a class="offer-btn modal-opn-order">Заказать</a>
+                        </div>
+                        <h4>Коктейльный бар</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons visible-xs visible-sm">
+                <div class="swiper-button-prev also-prev"></div>
+                <div class="swiper-pagination also-pag"></div>
+                <div class="swiper-button-next also-next"></div>
+            </div>
+        </div>
+    </section>
+    <section id="offer-2">
+        <div class="container">
+            <h2>Профессиональное обслуживание <br /> вашего мероприятия <br /> до <b>5000</b> гостей <b>одновременно</b></h2>
+            <a class="offer-btn modal-opn-order">Заказать консультацию</a>
+            <div class="offer-2-1"><img src="img/offer-2-1.png" /></div>
+            <div class="offer-2-2 wow fadeInRight"></div>
+        </div>
+    </section>
+    <section id="reason">
+        <div class="container">
+            <div class="header">
+                <h2>Причины доверять нам</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div>
+                        <div class="reason-ico"><img src="img/Icons/reason-1.svg" /></div>
+                    </div>
+                    <div>
+                        <p>Долголетние отношения с проверенными поставщиками,
+                            специалистами по оформлению и обслуживанию.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="reason-ico"><img src="img/Icons/reason-2.svg" /></div>
+                    </div>
+                    <div>
+                        <p>Своя обширная база оборудования, которая соответствует самым высоким мировым стандартам.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="reason-ico"><img src="img/Icons/reason-3.svg" /></div>
+                    </div>
+                    <div>
+                        <p>Дизайнерская посуда придаст утонченность Вашему мероприятию.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="trust">
+        <div class="container">
+            <div class="header">
+                <h2>С нами работают</h2>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1"><img src="img/logos/bbe.png" /></div>
+                    <div class="swiper-slide slide-2"><img src="img/logos/dif.png" /></div>
+                    <div class="swiper-slide slide-3"><img src="img/logos/estel.png" /></div>
+                    <div class="swiper-slide slide-4"><img src="img/logos/grohe.png" /></div>
+                    <div class="swiper-slide slide-5"><img src="img/logos/Harley-davidson.png" /></div>
+                    <div class="swiper-slide slide-6"><img src="img/logos/icl.png" /></div>
+                    <div class="swiper-slide slide-7"><img src="img/logos/imagine-group.png" /></div>
+                    <div class="swiper-slide slide-8"><img src="img/logos/penta-house.png" /></div>
+                    <div class="swiper-slide slide-9"><img src="img/logos/red-bull.png" /></div>
+                    <div class="swiper-slide slide-10"><img src="img/logos/uniqlo.png" /></div>
+                    <div class="swiper-slide slide-11"><img src="img/logos/beeline.png" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="case-modal-overlay" id="backVideo" onclick="goClose()">
+        <div class="case-modal-container">
+            <div class="case-cls-btn visible-xs">&times;</div>
+            <video id="videoOne" class="video-1" width="100%" height="100%" controls="controls">
+                <source src="video/video-1.mp4" type='video/mp4;'>
+            </video>
+            <video id="videoTwo" class="video-2" width="100%" height="100%" controls="controls">
+                <source src="video/video-2.mp4" type='video/mp4;'>
+            </video>
+            <video id="videoThree" class="video-3" width="100%" height="100%" controls="controls">
+                <source src="video/video-3.mp4" type='video/mp4;'>
+            </video>
+            <video id="videoFour" class="video-4" width="100%" height="100%" controls="controls">
+                <source src="video/video-4.mp4" type='video/mp4;'>
+            </video>
+        </div>
+    </div>
+    <section id="case">
+        <div class="case">
+            <div class="overlay">
+                <div class="container">
+                    <div class="col-md-3">
+                        <div class="case-link link-1 active" onclick="case1()">
+                            <div class="link-overlay">
+                                <p class="link-name">Корпоратив ICL 2018</p>
+                                <a class="offer-btn" onclick="caseVid1()">Смотреть видео <i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="case-link link-2" onclick="case2()">
+                            <div class="link-overlay">
+                                <p class="link-name">Red Bull Air Race 2018</p>
+                                <a class="offer-btn" onclick="caseVid2()">Смотреть видео <i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="case-link link-3" onclick="case3()">
+                            <div class="link-overlay">
+                                <p class="link-name">Корпоратив Унистрой 2018 - 1</p>
+                                <a class="offer-btn" onclick="caseVid3()">Смотреть видео <i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="case-link link-4" onclick="case4()">
+                            <div class="link-overlay">
+                                <p class="link-name">Корпоратив Унистрой 2018 - 2</p>
+                                <a class="offer-btn" onclick="caseVid4()">Смотреть видео <i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="case-name">
+                            <h2>Корпоратив ICL 2018</h2>
+                            <div class="play-box hidden-sm" onclick="caseVid1()">
+                                <div class="play-box-2">
+                                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 32" width="24" height="32"
+                                        style="margin-left: -25px;margin-right: 25px;">
+                                        <defs>
+                                            <filter id="flt1">
+                                                <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1   0 0 0 1 0" />
+                                            </filter>
+                                            <image width="24" height="32" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAMAAAA/gEgKAAAA5FBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWwvIjAAAATHRSTlPFrCoBAOv/7GQH58er8Y0Viv7hYQOYTtX9pByZFvnfVgJY1iEgnVMEW+P3lRkiqfvSTGOGLK5DCWf1ES+5yjwIcvJ4EC26czv0hUviDsxs+wAAAMpJREFUeJyN09kWwTAQBuCQaaxFbbWrfd+LohS1e//3wXX/nCO3X5I5mfnDmM/PCSymiEAwhCDMIiIKDjE1Fk9oyVTaC5k0z+q5fMEDxe/mUrFcqRoAiGp1kWlwANRsaXqbA6BOt9cfDAEQjcaT6YwDIGOeFIsSACJzKSIrDoDW1kZdbAEQ7Wxtf+AAyDkqp7MLgOhyFTYE04bg3PBVv+J3b/G19VCf7t8PlLWk8W3iy9vETvcN2y4blGS0MAzS+MgCJ42oNNSyb/AB27IjQNNZresAAAAASUVORK5CYII=" />
+                                        </defs>
+                                        <style>
+                                            tspan {
+                                            white-space: pre
+                                        }
+                                    </style>
+                                        <use id="Слой 29" style="filter: url(#flt1)" href="#img1" x="0" y="0" />
+                                    </svg>
+                                    <p>Смотреть <br /> видео</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="next-case" onclick="case2()">
+                <p class="visible-xs">Смотреть следующий кейс <img src="img/arrow-about.png" /></p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <div class="header">
+                <h2>Галерея</h2>
+            </div>
+        </div>
+        <div class="menu_block">
+            <div class="filters filter-button-group hidden-xs">
+                <ul>
+                    <h4>
+                        <li class="gallery_menu active" id='menu_banket'>Банкет</li>
+                        <li class="gallery_menu" id='menu_gala'>Гала-ужин</li>
+                        <li class="gallery_menu" id='menu_furshet'>Фуршет</li>
+                        <li class="gallery_menu" id='menu_bbq'>Барбекю</li>
+                        <li class="gallery_menu" id='menu_coctail'>Коктейль</li>
+                        <li class="gallery_menu" id='menu_candy'>Candy Bar</li>
+                        <li class="gallery_menu" id='menu_fishki'>Фишки</li>
+                    </h4>
+                </ul>
+            </div>
+
+            <div class="gallery-dropdown visible-xs">
+                <span class="filter-name">
+                    <p>Выберите категорию</p><span class="caret"></span>
+                </span>
+                <div class="filters filter-button-group">
+                    <ul>
+                        <li class="gallery_menu active" id='menu_banket_small'>Банкет</li>
+                        <li class="gallery_menu" id='menu_gala_small'>Гала-ужин</li>
+                        <li class="gallery_menu" id='menu_furshet_small'>Фуршет</li>
+                        <li class="gallery_menu" id='menu_bbq_small'>Барбекю</li>
+                        <li class="gallery_menu" id='menu_cocktail_small'>Коктейль</li>
+                        <li class="gallery_menu" id='menu_candy_small'>Candy Bar</li>
+                        <li class="gallery_menu" id='menu_fishki_small'>Фишки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_pics">
+            <div class="main_pics_item">
+                <div class="main_pics_item__img_cont main_pics_item__first_page">
+                    <div class="banket_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap banket_slider_trigger" data-number="0">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="banket_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap banket_slider_trigger" data-number="1">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="banket_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap banket_slider_trigger" data-number="2">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="banket_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap banket_slider_trigger" data-number="3">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="banket_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap banket_slider_trigger" data-number="4">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="banket_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap banket_slider_trigger" data-number="5">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="banket_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap banket_slider_trigger" data-number="6">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="banket_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap banket_slider_trigger" data-number="7">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_pics_item__img_cont main_pics_item__second_page invisible_item">
+                    <div class="gala_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap gala_slider_trigger" data-number="0">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gala_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap gala_slider_trigger" data-number="1">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gala_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap gala_slider_trigger" data-number="2">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_pics_item__img_cont main_pics_item__third_page invisible_item">
+                    <div class="furshet_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap furshet_slider_trigger" data-number="0">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="furshet_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap furshet_slider_trigger" data-number="1">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="furshet_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap furshet_slider_trigger" data-number="2">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="furshet_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap furshet_slider_trigger" data-number="3">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="furshet_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap furshet_slider_trigger" data-number="4">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="furshet_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap furshet_slider_trigger" data-number="5">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="furshet_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap furshet_slider_trigger" data-number="6">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="furshet_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap furshet_slider_trigger" data-number="7">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_pics_item__img_cont main_pics_item__fourth_page invisible_item">
+                    <div class="bbq_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap bbq_slider_trigger" data-number="0">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bbq_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap bbq_slider_trigger" data-number="1">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bbq_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap bbq_slider_trigger" data-number="2">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bbq_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap bbq_slider_trigger" data-number="3">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bbq_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap bbq_slider_trigger" data-number="4">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bbq_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap bbq_slider_trigger" data-number="5">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bbq_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap bbq_slider_trigger" data-number="6">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bbq_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap bbq_slider_trigger" data-number="7">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_pics_item__img_cont ready_for_cocktail invisible_item"> </div>
+                <div class="main_pics_item__img_cont main_pics_item__fifth_page invisible_item">
+                    <div class="candy_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap candy_slider_trigger" data-number="0">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="candy_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap candy_slider_trigger" data-number="1">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="candy_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap candy_slider_trigger" data-number="2">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_pics_item__img_cont main_pics_item__sixth_page invisible_item">
+                    <div class="fishki_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap fishki_slider_trigger" data-number="0">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="fishki_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap fishki_slider_trigger" data-number="1">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="fishki_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap fishki_slider_trigger" data-number="2">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="fishki_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap fishki_slider_trigger" data-number="3">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="fishki_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap fishki_slider_trigger" data-number="4">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="fishki_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap fishki_slider_trigger" data-number="5">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="fishki_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap fishki_slider_trigger" data-number="6">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="fishki_pic main_pics_item__image">
+                        <div class="main_pics_item__image_wrap fishki_slider_trigger" data-number="7">
+                            <svg enable-background="new 0 0 451 451" fill="#fff" version="1.1" viewBox="0 0 451 451"
+                                xml:space="preserve">
+                                <path d="m447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1 0-106.1-86.3-192.3-192.3-192.3-106.1 0-192.3 86.3-192.3 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2l109.6 109.6c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zm-420.1-235.7c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_conatiner invisible_item" id="slider_conatiner">
+                <div class="photo-modal-cls" id="close_gallery_slider">×</div>
+                <div class="slider_btn slider_btn_prev" id="slider_btn_prev"></div>
+                <div class="slider_btn slider_btn_next" id="slider_btn_next"></div>
+                <div class="img_wrap" id="slider_wrap"></div>
+            </div>
+            <div class="slider_conatiner small_slider" id="slider_conatiner_small">
+                <div class="slider_nav" id="slider_nav">
+                    <div class="slider_btn slider_btn_prev" id="slider_btn_prev_small"></div>
+                    <div class="slider_pagination"></div>
+                    <div class="slider_btn slider_btn_next" id="slider_btn_next_small"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        <div class="content grid hidden-xs">
+            <div class="single-content grid-item banket banket-1"><a class="banket_open" data-number="0"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item banket banket-2"><a class="banket_open" data-number="1"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item banket banket-3"><a class="banket_open" data-number="2"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item banket banket-4"><a class="banket_open" data-number="3"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item banket banket-9"><a class="banket_open" data-number="7"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item banket banket-5"><a class="banket_open" data-number="4"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item banket banket-7"><a class="banket_open" data-number="5"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item banket banket-8"><a class="banket_open" data-number="6"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item gala gala-1"><a class="gala_open" data-number="8"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item gala gala-2"><a class="gala_open" data-number="9"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item gala gala-3"><a class="gala_open" data-number="10"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item furshet furshet-1"><a class="furshet_open" data-number="11"><img
+                        src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item furshet furshet-2"><a class="furshet_open" data-number="12"><img
+                        src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item furshet furshet-3"><a class="furshet_open" data-number="13"><img
+                        src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item furshet furshet-4"><a class="furshet_open" data-number="14"><img
+                        src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item furshet furshet-5"><a class="furshet_open" data-number="15"><img
+                        src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item furshet furshet-6"><a class="furshet_open" data-number="16"><img
+                        src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item furshet furshet-7"><a class="furshet_open" data-number="17"><img
+                        src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item furshet furshet-8"><a class="furshet_open" data-number="18"><img
+                        src="img/Icons/magnifying-glass.svg" /></a></div>
+
+            <div class="single-content grid-item bbq bbq-1"><a class="bbq_open" data-number="19"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item bbq bbq-2"><a class="bbq_open" data-number="20"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item bbq bbq-3"><a class="bbq_open" data-number="21"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item bbq bbq-4"><a class="bbq_open" data-number="22"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item bbq bbq-5"><a class="bbq_open" data-number="23"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item bbq bbq-6"><a class="bbq_open" data-number="24"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item bbq bbq-7"><a class="bbq_open" data-number="25"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item bbq bbq-8"><a class="bbq_open" data-number="26"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+
+            <div class="single-content grid-item candy candy-1"><a class="candy_open" data-number="27"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item candy candy-2"><a class="candy_open" data-number="28"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item candy candy-3"><a class="candy_open" data-number="29"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+
+            <div class="single-content grid-item fish fish-1"><a class="fishki_open" data-number="30"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item fish fish-2"><a class="fishki_open" data-number="31"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item fish fish-3"><a class="fishki_open" data-number="32"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item fish fish-4"><a class="fishki_open" data-number="33"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item fish fish-5"><a class="fishki_open" data-number="34"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item fish fish-6"><a class="fishki_open" data-number="35"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item fish fish-7"><a class="fishki_open" data-number="36"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+            <div class="single-content grid-item fish fish-8"><a class="fishki_open" data-number="37"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+
+        </div>
+
+        <div class="content grid visible-xs">
+            <div class="single-content grid-item banket">
+                <div class="swiper-container swiper-banket visible-xs">
+                    <div class="swiper-wrapper">
+                        <div class="banket-1 swiper-slide"></div>
+                        <div class="banket-2 swiper-slide"></div>
+                        <div class="banket-3 swiper-slide"></div>
+                        <div class="banket-4 swiper-slide"></div>
+                        <div class="banket-5 swiper-slide"></div>
+                        <div class="banket-7 swiper-slide"></div>
+                        <div class="banket-8 swiper-slide"></div>
+                        <div class="banket-9 swiper-slide"></div>
+                    </div>
+                    <div class="buttons">
+                        <div class="swiper-button-prev gallery-prev banket-prev"></div>
+                        <div class="swiper-pagination gallery-pag banket-pag"></div>
+                        <div class="swiper-button-next gallery-next banket-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content grid visible-xs">
+            <div class="single-content grid-item gala">
+                <div class="swiper-container swiper-gala visible-xs">
+                    <div class="swiper-wrapper">
+                        <div class="gala-1 swiper-slide"><a class="open-photo-modal" data-number="8"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="gala-2 swiper-slide"><a class="open-photo-modal" data-number="9"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="gala-3 swiper-slide"><a class="open-photo-modal" data-number="10"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                    </div>
+                    <div class="buttons">
+                        <div class="swiper-button-prev gallery-prev gala-prev"></div>
+                        <div class="swiper-pagination gallery-pag gala-pag"></div>
+                        <div class="swiper-button-next gallery-next gala-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content grid visible-xs">
+            <div class="single-content grid-item furshet">
+                <div class="swiper-container swiper-furshet visible-xs">
+                    <div class="swiper-wrapper">
+                        <div class="furshet-1 swiper-slide"><a class="open-photo-modal" data-number="11"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="furshet-2 swiper-slide"><a class="open-photo-modal" data-number="12"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="furshet-3 swiper-slide"><a class="open-photo-modal" data-number="13"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="furshet-4 swiper-slide"><a class="open-photo-modal" data-number="14"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="furshet-5 swiper-slide"><a class="open-photo-modal" data-number="15"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="furshet-6 swiper-slide"><a class="open-photo-modal" data-number="16"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="furshet-7 swiper-slide"><a class="open-photo-modal" data-number="17"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="furshet-8 swiper-slide"><a class="open-photo-modal" data-number="18"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                    </div>
+                    <div class="buttons">
+                        <div class="swiper-button-prev gallery-prev furshet-prev"></div>
+                        <div class="swiper-pagination gallery-pag furshet-pag"></div>
+                        <div class="swiper-button-next gallery-next furshet-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content grid visible-xs">
+            <div class="single-content grid-item bbq">
+                <div class="swiper-container swiper-bbq visible-xs">
+                    <div class="swiper-wrapper">
+                        <div class="bbq-1 swiper-slide"><a class="open-photo-modal" data-number="19"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="bbq-2 swiper-slide"><a class="open-photo-modal" data-number="20"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="bbq-3 swiper-slide"><a class="open-photo-modal" data-number="21"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="bbq-4 swiper-slide"><a class="open-photo-modal" data-number="22"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="bbq-5 swiper-slide"><a class="open-photo-modal" data-number="23"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="bbq-6 swiper-slide"><a class="open-photo-modal" data-number="24"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="bbq-7 swiper-slide"><a class="open-photo-modal" data-number="25"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        <div class="bbq-8 swiper-slide"><a class="open-photo-modal" data-number="26"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                    </div>
+                    <div class="buttons">
+                        <div class="swiper-button-prev gallery-prev bbq-prev"></div>
+                        <div class="swiper-pagination gallery-pag bbq-pag"></div>
+                        <div class="swiper-button-next gallery-next bbq-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content grid visible-xs">
+                <div class="single-content grid-item candy">
+                    <div class="swiper-container swiper-candy visible-xs">
+                        <div class="swiper-wrapper">
+                            <div class="candy-1 swiper-slide"><a class="open-photo-modal" data-number="27"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="candy-2 swiper-slide"><a class="open-photo-modal" data-number="28"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="candy-3 swiper-slide"><a class="open-photo-modal" data-number="29"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        </div>
+                        <div class="buttons">
+                            <div class="swiper-button-prev gallery-prev candy-prev"></div>
+                            <div class="swiper-pagination gallery-pag candy-pag"></div>
+                            <div class="swiper-button-next gallery-next candy-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content grid visible-xs">
+                <div class="single-content grid-item fish">
+                    <div class="swiper-container swiper-fish visible-xs">
+                        <div class="swiper-wrapper">
+                            <div class="fish-1 swiper-slide"><a class="open-photo-modal" data-number="30"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="fish-2 swiper-slide"><a class="open-photo-modal" data-number="31"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="fish-3 swiper-slide"><a class="open-photo-modal" data-number="32"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="fish-4 swiper-slide"><a class="open-photo-modal" data-number="33"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="fish-5 swiper-slide"><a class="open-photo-modal" data-number="34"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="fish-6 swiper-slide"><a class="open-photo-modal" data-number="35"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="fish-7 swiper-slide"><a class="open-photo-modal" data-number="36"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                            <div class="fish-8 swiper-slide"><a class="open-photo-modal" data-number="37"><img src="img/Icons/magnifying-glass.svg" /></a></div>
+                        </div>
+                        <div class="buttons">
+                            <div class="swiper-button-prev gallery-prev fish-prev"></div>
+                            <div class="swiper-pagination gallery-pag fish-pag"></div>
+                            <div class="swiper-button-next gallery-next fish-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="photo-modal" id="photo-gallery">
+        <div class="photo-modal-container" id="banket_container">
+            <div class="photo-modal-cls">&times;</div>
+            <div class="swiper-container" id="banket_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1"><img src="img/banket/banket-1.jpg" /></div>
+                    <div class="swiper-slide slide-2"><img src="img/banket/banket-2.jpg" /></div>
+                    <div class="swiper-slide slide-3"><img src="img/banket/banket-3.jpg" /></div>
+                    <div class="swiper-slide slide-4"><img src="img/banket/banket-4.jpg" /></div>
+                    <div class="swiper-slide slide-5"><img src="img/banket/banket-5.jpg" /></div>
+                    <div class="swiper-slide slide-7"><img src="img/banket/banket-7.jpg" /></div>
+                    <div class="swiper-slide slide-8"><img src="img/banket/banket-8.jpg" /></div>
+                    <div class="swiper-slide slide-9"><img src="img/banket/banket-6.jpg" /></div>
+                </div>
+            </div>
+            <div class="swiper-button-prev photo-modal-prev" id="banket-prev"></div>
+            <div class="swiper-button-next photo-modal-next" id="banket-next"></div>
+        </div>
+        <div class="photo-modal-container" id="gala_container">
+            <div class="photo-modal-cls">&times;</div>
+            <div class="swiper-container" id="gala_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-14"><img src="img/gala/gala-1.jpg" /></div>
+                    <div class="swiper-slide slide-15"><img src="img/gala/gala-2.jpg" /></div>
+                    <div class="swiper-slide slide-16"><img src="img/gala/gala-3.jpg" /></div>
+                </div>
+            </div>
+            <div class="swiper-button-prev photo-modal-prev" id="gala-prev"></div>
+            <div class="swiper-button-next photo-modal-next" id="gala-next"></div>
+        </div>
+        <div class="photo-modal-container" id="fur_container">
+            <div class="photo-modal-cls">&times;</div>
+            <div class="swiper-container" id="fur_slider">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide slide-17"><img src="img/fur/fur-1.jpg"/></div>
+                <div class="swiper-slide slide-18"><img src="img/fur/fur-2.jpg"/></div>
+                <div class="swiper-slide slide-19"><img src="img/fur/fur-3.jpg"/></div>
+                <div class="swiper-slide slide-20"><img src="img/fur/fur-4.jpg" alt="alt description"></div>
+                <div class="swiper-slide slide-21"><img src="img/fur/fur-5.jpg"/></div>
+                <div class="swiper-slide slide-22"><img src="img/fur/fur-6.jpg"/></div>
+                <div class="swiper-slide slide-23"><img src="img/fur/fur-7.jpg"/></div>
+                <div class="swiper-slide slide-24"><img src="img/fur/fur-8.jpg"/></div>
+                </div>
+            </div>
+            <div class="swiper-button-prev photo-modal-prev" id="fur-prev"></div>
+            <div class="swiper-button-next photo-modal-next" id="fur-next"></div>
+        </div>
+        <div class="photo-modal-container" id="bbq_container">
+            <div class="photo-modal-cls">&times;</div>
+            <div class="swiper-container" id="bbq_slider">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide slide-35"><img src="img/bbq/bbq-1.jpg"/></div>
+                <div class="swiper-slide slide-36"><img src="img/bbq/bbq-2.jpg"/></div>
+                <div class="swiper-slide slide-37"><img src="img/bbq/bbq-3.jpg"/></div>
+                <div class="swiper-slide slide-38"><img src="img/bbq/bbq-4.jpg"/></div>
+                <div class="swiper-slide slide-39"><img src="img/bbq/bbq-5.jpg"/></div>
+                <div class="swiper-slide slide-40"><img src="img/bbq/bbq-6.jpg"/></div>
+                <div class="swiper-slide slide-41"><img src="img/bbq/bbq-7.jpg"/></div>
+                <div class="swiper-slide slide-42"><img src="img/bbq/bbq-8.jpg"/></div>
+                </div>
+            </div>
+            <div class="swiper-button-prev photo-modal-prev" id="bbq-prev"></div>
+            <div class="swiper-button-next photo-modal-next" id="bbq-next"></div>
+        </div>
+        <div class="photo-modal-container" id="candy_container">
+            <div class="photo-modal-cls">&times;</div>
+            <div class="swiper-container" id="candy_slider">
+                <div class="swiper-wrapper">
+              <div class="swiper-slide slide-55"><img src="img/candy/candy-1.jpg"/></div>
+                <div class="swiper-slide slide-56"><img src="img/candy/candy-2.jpg"/></div>
+                <div class="swiper-slide slide-57"><img src="img/candy/candy-3.jpg"/></div>
+                </div>
+            </div>
+            <div class="swiper-button-prev photo-modal-prev" id="candy-prev"></div>
+            <div class="swiper-button-next photo-modal-next" id="candy-next"></div>
+        </div>
+        <div class="photo-modal-container" id="fishki_container">
+            <div class="photo-modal-cls">&times;</div>
+            <div class="swiper-container" id="fishki_slider">
+                <div class="swiper-wrapper">
+              <div class="swiper-slide slide-58"><img src="img/FP/fp-1.jpg"/></div>
+                <div class="swiper-slide slide-59"><img src="img/FP/fp-2.jpg"/></div>
+                <div class="swiper-slide slide-60"><img src="img/FP/fp-3.jpg"/></div>
+                <div class="swiper-slide slide-61"><img src="img/FP/fp-4.jpg"/></div>
+                <div class="swiper-slide slide-62"><img src="img/FP/fp-5.jpg"/></div>
+                <div class="swiper-slide slide-63"><img src="img/FP/fp-6.jpg"/></div>
+                <div class="swiper-slide slide-64"><img src="img/FP/fp-7.jpg"/></div>
+                <div class="swiper-slide slide-65"><img src="img/FP/fp-8.jpg"/></div> 
+                </div>
+            </div>
+            <div class="swiper-button-prev photo-modal-prev" id="fishki-prev"></div>
+            <div class="swiper-button-next photo-modal-next" id="fishki-next"></div>
+        </div>
+    </div> -->
+    </section>
+    <section id="social">
+        <h2>Следите за нами в <b>социальных сетях</b></h2>
+        <span>
+            <a target="_blank" href="https://www.instagram.com/diakov_agureev_catering/" class="offer-btn inst-btn"><i
+                    class="fa fa-instagram"></i> <span>Подписаться</span></a>
+            <a target="_blank" href="https://www.facebook.com/diakov.agureev.catering" class="offer-btn facebook-btn"><i
+                    class="fa fa-facebook"></i> <span>Подписаться</span></a>
+            <a target="_blank" href="https://vk.com/diakov_agureev_catering" class="offer-btn vk"><i class="fa fa-vk"></i>
+                <span>Подписаться</span></a>
+            <a target="_blank" href="https://pinterest.com/dacatering" class="offer-btn pinterest"><i class="fa fa-pinterest"></i>
+                <span>Подписаться</span></a>
+        </span>
+        <div class="social-img wow fadeInLeft"><img src="img/social1.png" /></div>
+        <div class="social-img capusta hidden-xs wow fadeInRight"></div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="col-md-6 left-block hidden-xs">
+                <h2>Наши контакты</h2>
+                <ul>
+                    <li>
+                        <i class="fa fa-map-marker" style="margin-right: 8px;"></i>
+
+                        Казань, ул.Мазита Гафури, д.71, корп.3
+                    </li>
+                    <li><a href="https://go.2gis.com/g4kpg" class="offer-btn gis-btn" target="_blank"><img src="img/2gis.png" />
+                            <span>|</span> Как добраться</a></li>
+                    <li>
+                        Выберите удобный способ связи:
+                        <div class="social">
+                            <a href="tg://resolve?domain=chef2group" class="telegram">
+                                <img class="telegram-white" src="img/Icons/telegram.svg" /><img class="telegram-blue"
+                                    src="img/Icons/telegram-blue.svg" /><img class="telegram-black" src="img/Icons/telegram-black.svg" />
+                                <p>Telegram</p>
+                            </a>
+                            <a href="https://wa.me/79274252525" class="whatsapp">
+                                <img class="whatsapp-blue" src="img/Icons/whatsapp-logo.svg" /><img class="whatsapp-green"
+                                    src="img/Icons/whatsapp-logo-green.svg" /><img class="whatsapp-black" src="img/Icons/whatsapp-logo-black.svg" />
+                                <p>WhatsApp</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone"></i> Звоните
+                        <a href="tel: + 7 (927) 425-25-25">
+                            <p>+ 7 (927) 425-25-25</p>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"></i> Пишите нам:
+                        <a href="mailto: catering@chef2.ru">
+                            <p>catering@chef2.ru</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-md-offset-2 form-block">
+                <div class="header">
+                    <h2 class="hidden-xs">Свяжитесь с нами</h2>
+                    <h2 class="visible-xs">Оставить заявку</h2>
+                    <p class="visible-xs">Заполните контактную форму и мы с вами свяжемся</p>
+                </div>
+                <form action="mail.php" method="post" onsubmit="enterIn()">
+                    <input type="text" name="name" placeholder="Ваше Имя" id="contact_name" required />
+                    <input type="tel" name="phone" id="numberPhone1" placeholder="Телефон" required />
+                    <input type="text" name="email" id="contact_email" pattern="^\w+@\w+.\w+$" placeholder="Электронный адрес" />
+                    <input type="submit" name="submit" class="offer-btn" value="Отправить заявку" />
+                    <p>Отправляя заявку, вы подтверждаете свое согласие
+                        <br />с <a href="politikaconf.rtf">политикой конфиденциальности</a></p>
+                </form>
+            </div>
+            <div class="col-md-6 left-block mobile-block visible-xs"></div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container hidden-xs">
+            <table>
+                <tr>
+                    <td><a href="#main"><img src="img/logo-black.svg" /></a></td>
+                </tr>
+                <tr>
+                    <td>© 2018 D&A CATERING.
+                        <br />Все права защищены
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" class="drim-btn" href="https://drim.agency/"><img src="img/drim.png" class="drim-logo" />
+                            <br />
+                            Разработка сайта</a>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr class="first">
+                    <td>Наши услуги</td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#services">Банкет</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#services">Гала-ужин</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#services">Фуршет</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#services">Барбекю</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#services">Candy bar</a></td>
+                </tr>
+            </table>
+            <table>
+                <tr class="first">
+                    <td>Доп услуги</td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#also">Food Show</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#also">Food Pairing</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#also">Мастер-класс</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#also">Анимационные станции</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#also">Устричный бар</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#also">Коктейльный бар</a></td>
+                </tr>
+            </table>
+            <table>
+                <tr class="first">
+                    <td>Информация</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#about">О компании</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#own">Производство</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#case">Кейсы</a></td>
+                </tr>
+                <tr>
+                    <td><a class="onpage-link" href="#gallery">Галерея</a></td>
+                </tr>
+                <tr>
+                    <td><a href="politikaconf.rtf"><u>Политика <br /> конфиденциальности</u></a></td>
+                </tr>
+            </table>
+            <table>
+                <tr class="first">
+                    <td><a>Контакты</a></td>
+                </tr>
+                <tr>
+                    <td><b>Адрес:</b> <br /> г.Казань, <br /> ул.Мазита Гафури, д.71, корп.3</td>
+                </tr>
+                <tr>
+                    <td><b>Контактный телефон:</b> <br /> <a href="tel:+7 (927) 425-25-25">+7 (927) 425-25-25</a></td>
+                </tr>
+                <tr>
+                    <td><b>Эл.Адрес:</b> <br /> <a href="mailto:catering@chef2.ru">catering@chef2.ru</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="container visible-xs">
+            <ul>
+                <li><a href="#main" class="onpage-link"><img src="img/logo.svg" /></a></li>
+                <li>&copy; 2018 D&A CATERING <br /> Все права защищены</li>
+                <li><a href="politikaconf.rtf"><u>Политика <br /> конфиденциальности</u></a></li>
+                <li><a href="https://drim.agency/" target="_blank"><img class="drim-img" style="width: 30%" src="img/drim-logo.svg" /></a></li>
+            </ul>
+            <ul class="links">
+                <li><a class="onpage-link" href="#service-1">Банкет</a></li>
+                <li><a class="onpage-link" href="#service-2">Гала-ужин</a></li>
+                <li><a class="onpage-link" href="#service-3">Фуршет</a></li>
+                <li><a class="onpage-link" href="#service-4">Барбекю</a></li>
+                <li><a class="onpage-link" href="#service-6">Candy bar</a></li>
+            </ul>
+            <a class="up-btn visible-xs onpage-link" href="#main"><img src="img/Icons/up-arrow.svg" /></a>
+        </div>
+    </section>
+
+
+    <section class="modal_order" id="zay-modal-overlay" style="position: fixed;">
+        <div class="zay-modal-container" style="position: fixed;">
+            <div class="zay-modal-cls">&times;</div>
+            <div class="zay-modal-inner" style="position: relative !important;">
+                <h3 style="font-size: 24px !important;">Оставить заявку на заказ кейтеринга</h3>
+                <h4>Заполните контактную форму и мы с вами свяжемся</h4>
+                <form action="mail.php" method="post">
+                    <input class="name" type="text" name="name" id="nameForm" placeholder="Введите Ваше Имя" required />
+                    <input class="tel" type="tel" name="phone" id="numberPhone" placeholder="Контактный телефон"
+                        required />
+                    <input class="offer-btn" type="submit" name="submit" value="Оставить заявку" />
+                    <p class="open-zay">Отправляя заявку, вы подтверждаете свое согласие с <a href="politikaconf.rtf">политикой
+                            конфиденциальности</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="zay-menu-overlay" style="position: fixed;">
+        <div class="zay-menu-container" style="position: fixed; ">
+            <div class="zay-modal-cls menu-cls">&times;</div>
+            <div class="zay-modal-inner" style="position: relative !important;">
+                <h3 style="font-size: 24px !important;">Скачать первичное меню</h3>
+                <h4>Введите контактные данные</h4>
+                <form action="mail.php" method="post">
+                    <input class="name" type="text" name="name" id="nameForm2" placeholder="Введите Ваше Имя" required />
+                    <input class="tel" type="tel" name="phone" id="numberPhone2" placeholder="Контактный телефон"
+                        required />
+                    <input class="offer-btn" type="submit" name="submit" value="Скачать" />
+                    <p class="open-zay">Отправляя заявку, вы подтверждаете свое согласие с <a href="politikaconf.rtf">политикой
+                            конфиденциальности</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="zay-allowed-modal-overlay" style="position: fixed;">
+        <div class="zay-allowed-modal-container">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve">
+                <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
+		S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z" />
+                <path d="M38.252,15.336l-15.369,17.29l-9.259-7.407c-0.43-0.345-1.061-0.274-1.405,0.156c-0.345,0.432-0.275,1.061,0.156,1.406
+		l10,8C22.559,34.928,22.78,35,23,35c0.276,0,0.551-0.114,0.748-0.336l16-18c0.367-0.412,0.33-1.045-0.083-1.411
+		C39.251,14.885,38.62,14.922,38.252,15.336z" /></svg>
+
+            <div class="zay-modal-cls zay-allowed-modal-cls">&times;</div>
+            <div class="zay-modal-inner">
+                <h3>Заявка принята</h3>
+                <h4>Мы свяжемся с Вами в ближайшее время</h4>
+            </div>
+        </div>
+    </section>
+    <script>
+            var preloader_percent = document.getElementById('preloader_percent');
+            var all_img = document.getElementsByTagName('img');
+            var load_time = 7000;
+            var load_percent = 7000/100;
+            var now = Date.now()
+            var time_to_stop = now+load_time;
+            var x = 0;
+            var document_width = document.documentElement.clientWidth;
+            
+            var timerId = setInterval(function() {
+                
+                if(((document.body.children[0]).children[0]).children[0].innerHTML < 100) {
+                    ((document.body.children[0]).children[0]).children[0].innerHTML = x;
+                    x++;
+                }
+                else if(((document.body.children[0]).children[0]).children[0].innerHTML == 100) {
+                    document.getElementsByClassName('preloader')[0].style.top='-100%';
+                    document.getElementsByClassName('preloader')[0].style.opacity='0.7';
+                }
+                if(Date.now() > time_to_stop) {
+                document.getElementsByClassName('preloader')[0].style.display='none';
+                document.body.style='overflow-y: scroll'
+            }
+        }, 50);
+
+            setTimeout(function() {
+                clearInterval(timerId);}, 7050);
+
+        </script>
+    <div class="slider_overlay invisible_item"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- Android Viewport height fix-->
+    <script type="text/javascript">
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+
+        $('.case-cls-btn').click(function () {
+            $('body').css("overflow-y", 'visible');
+            $('.case-modal-overlay').css("z-index", '-1').css("opacity", '0');
+            $('.case-modal-overlay video').trigger('pause');
+        })
+    </script>
+</body>
+
+</html>

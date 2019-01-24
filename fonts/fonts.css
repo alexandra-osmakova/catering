@@ -1,0 +1,14 @@
+body{font-family: 'Open Sans', sans-serif;}
+h1, h2{font-family: acrom;text-transform: uppercase;}
+h1{font-size: 50px;color: #fff;}
+h2{font-size: 36px;line-height: 55px;}
+h2 b{position: relative;}
+h2 b:after{position: absolute;content: "";width: 100%;height: 3px;bottom: -5px;left: 0;border-bottom: 2px solid #000;}
+@font-face {
+font-family: 'acrom';
+src: url('acrom600.eot');
+src: url('acrom600.eot?#iefix') format('embedded-opentype'),
+url('acrom600.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
