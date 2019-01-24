@@ -328,13 +328,11 @@ a{cursor: pointer;}
 
 .main_pics_item__image {
 	width: 25%;
-	height: 200px;
+	height: 230px;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	flex-basis: 300px;
-	flex-grow: 2;
 }
 
 .main_pics_item__image_wrap {
