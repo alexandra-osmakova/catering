@@ -465,12 +465,14 @@ $(".bars-btn").click(function () {
     if ($(".nav").hasClass('active')) {
         $('.nav').css("right", '-100%').removeClass('active');
         $('.bars').css("opacity", '1');
+        $('.mobile-main-info').css("opacity", "1");
         $('.close-btn').css("opacity", '0').css("transform", 'rotate(0)');
         $('body').css("overflow-y", 'visible')
     } else {
         $('.nav').css("right", '0').addClass('active');
         $('.bars').css("opacity", '0');
         $('.close-btn').css("opacity", '1').css("transform", 'rotate(180deg)');
+        $('.mobile-main-info').css("opacity", "0")
         $('body').css("overflow-y", 'hidden')
     }
 })
