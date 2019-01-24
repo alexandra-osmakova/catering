@@ -83,8 +83,8 @@ a{cursor: pointer;}
 #offer{text-align: center;padding: 140px 0;position: relative;}
 #offer h2{line-height: 55px;}
 #offer a{margin-top: 50px;}
-#offer .petrushka{position: absolute;left: -135px;top: 20%; z-index: -1}
-#offer .basilik{ z-index: -1;position: absolute;right: 0;display: inline-block;top: 60px;height: 400px;vertical-align: middle; background-position: 130% 100%; background-repeat: no-repeat;	background-image: url(../img/img-right.png);	width: 400px;	align-items: center;}
+#offer .petrushka{position: absolute;left: -110px;top: 20%; z-index: -1}
+#offer .basilik{ z-index: -1;position: absolute;right: 0;display: inline-block;top: 0;height: 400px;vertical-align: middle; background-position: 300% 100%; background-repeat: no-repeat;	background-image: url(../img/img-right.png);	width: 400px;	align-items: center;}
 
 /* ABOUT */
 
@@ -821,6 +821,10 @@ a{cursor: pointer;}
 	.slider_conatiner {width: 60%;left: 20%;}
 }
 
+@media (min-width: 375px) and (max-width: 425px) {
+	#offer .petrushka {left: -160px!important;top: 38px!important;}
+}
+
 @media(max-width: 700px){
     body {overflow-x:hidden;}
     html {overflow-x:hidden;}
@@ -866,8 +870,8 @@ a{cursor: pointer;}
 	.zay-allowed-modal-container{display: grid;}
 
 	#offer .petrushka img{height: 280px;}
-	#offer .petrushka {left: -150px;top: 90px;}
-	#offer .basilik {right: -34px;top: 234px;background-position: 235px center; background-size: contain;}
+	#offer .petrushka {left: -160px;top: 98px;}
+	#offer .basilik {transform: scale(0.7);right: -60px;top: 234px;background-position: 235px center; background-size: contain;}
 	#offer h2{padding: 0 15px;font-size: 24px;line-height: 40px;font-weight:bold; margin: 0 24px;}
     #about{ display: none}
 	#about .swiper-slide{padding: 20px 0;}
