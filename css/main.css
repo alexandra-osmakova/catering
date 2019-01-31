@@ -734,7 +734,7 @@ a{cursor: pointer;}
 .bars-btn{display:none;}
 
 .photo-modal{position: fixed;top:0;left:0;z-index:-1;opacity: 0;;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7);display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
-.photo-modal .photo-modal-container{width: 40%;height: 60%;position: relative; display: none;}
+.photo-modal .photo-modal-container{width: 40%;height: 60%;position: relative;}
 #banket_container, #gala_container, #fur_container, #bbq_container, #candy_container, #fishki_container {display: none;}
 #banket_container.active, #gala_container.active, #fur_container.active, #bbq_container.active, #candy_container.active, #fishki_container.active{display: block;}
 .photo-modal .swiper-slide img, .photo-modal .swiper-slide{height: 100%;width: 100%;}
