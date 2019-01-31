@@ -140,7 +140,7 @@ a{cursor: pointer;}
 #services .col-md-6{height: 100%;padding: 50px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;}
 #services .row{height: 360px;cursor: default;}
 #services .offer-btn{padding: 15px 50px;margin: 30px 0 0 20px}
-#services .download-btn{margin: 30px 20px 0 0;font-size: 15px;color: #000;text-transform: uppercase;border-bottom: 1.5px dashed #000}
+#services .download-btn{margin: 30px 20px 0 0;font-size: 15px;color: #000;text-transform: uppercase;border-bottom: 1.5px dashed #000;cursor: pointer}
 #services .offer-btn, #services .download-btn{display: inline-block;}
 #services .service-1 .left-block{background-image: url(../img/service-1.jpeg);padding: 0}
 #services .service-2 .right-block{background-image: url(../img/gala.jpg);padding: 0}

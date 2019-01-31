@@ -845,4 +845,8 @@ document.body.addEventListener('click', function(event) {
     }
 })
 
+$("span.download-btn.open_modal").on("click", function (e) {
+    $("input#location").val(e.currentTarget.id);
+});
+
 

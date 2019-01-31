@@ -101,7 +101,7 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
 
 <body style="overflow-y: hidden">
    <div class="preloader" style="padding: 30px; width: 100%; height: 100%; position: fixed; top: 0; left: 0;
-    right: 0; bottom: 0; transition: all 0.5s ease; opacity: 1; background-color: #000000; z-index: 2000002; display: flex; align-items: center; justify-content: center;">
+    right: 0; bottom: 0; transition: all 0.5s ease; opacity: 1; background-color: #000000; z-index: 2000002; display: none; align-items: center; justify-content: center;">
         <p style="font-size:24px; color: #ffffff; font-weight: bold;">Страница загружена на <span id="preloader_percent">0</span>%</p>
     </div>
     <div class="nav" id="showInScroll">
@@ -337,7 +337,7 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
                         <p>Банкет - крупное событие, которое требует особенного внимания. Во время праздничного банкета
                             все
                             должно быть идеально – сервировка, выбор и подача блюд.</p>
-                        <a class="download-btn open_modal" href="docs/banket.pdf" target="_blank">Скачать меню</a>
+                        <span class="download-btn open_modal" id="banket">Скачать меню</span>
                     </div>
                 </div>
                 <div class="row service-2 wow fadeInUp" id="service-2">
@@ -348,7 +348,7 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
                             посуда и высококлассное обслуживание - все продумано до мелочей. Это будет торжество,
                             которое
                             никого не оставит равнодушным.</p>
-                        <a class="download-btn open_modal" href="#" target="_blank">Скачать меню</a>
+                        <span class="download-btn open_modal">Скачать меню</span>
                     </div>
                     <div class="col-md-6 col-sm-6 right-block">
                         <div class="overlay"></div>
@@ -365,7 +365,7 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
                             изящной подачей и великолепным обслуживанием. А гости наслаждаются легкими закусками,
                             салатами,
                             десертами и напитками.</p>
-                        <a class="download-btn open_modal" href="docs/furshet.pdf" target="_blank">Скачать меню</a>
+                        <span class="download-btn open_modal" id="furshet">Скачать меню</span>
                     </div>
                 </div>
                 <div class="row service-4 wow fadeInUp" id="service-4">
@@ -375,7 +375,7 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
                             нежнейшая
                             рыба, пикантные овощи - теперь любителям всего этого не придется становиться к мангалу. Мы
                             сделаем это за Вас!</p>
-                        <a class="download-btn open_modal" href="docs/BBQ.pdf" target="_blank">Скачать меню</a>
+                        <span class="download-btn open_modal" id="BBQ">Скачать меню</span>
                     </div>
                     <div class="col-md-6 col-sm-6 right-block">
                         <div class="overlay"></div>
@@ -390,7 +390,7 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
                         <p>Организация кэнди-бара – предмет гордости "D&A catering". Мы прикладываем все усилия, чтобы
                             воссоздать легендарный “Candy Bar” — сладкий буфет или стол с пирожными и сладкими
                             закусками.</p>
-                        <a class="download-btn open_modal">Скачать меню</a>
+                        <span class="download-btn open_modal">Скачать меню</span>
                     </div>
                 </div>
             </div>
@@ -1485,11 +1485,12 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
             <div class="zay-modal-inner" style="position: relative !important;">
                 <h3 style="font-size: 24px !important;">Скачать первичное меню</h3>
                 <h4>Введите контактные данные</h4>
-                <form action="mail.php" method="post">
+                <form action="mail.php" id="download" method="post">
                     <input class="name" type="text" name="name" id="nameForm2" placeholder="Введите Ваше Имя" required />
                     <input class="tel" type="tel" name="phone" id="numberPhone2" placeholder="Контактный телефон"
                         required />
                     <input class="offer-btn" type="submit" name="submit" value="Скачать" />
+                    <input type="hidden" id="location" name="location">
                     <p class="open-zay">Отправляя заявку, вы подтверждаете свое согласие с <a href="politikaconf.rtf">политикой
                             конфиденциальности</a></p>
                 </form>
