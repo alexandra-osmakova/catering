@@ -874,4 +874,14 @@ document.body.addEventListener('click', function (event) {
         modal_window.style.position = "fixed";
         modal_window.style.zIndex = "100000";
     }
+<<<<<<< HEAD
 })
+=======
+})
+
+$("span.download-btn.open_modal").on("click", function (e) {
+    $("input#location").val(e.currentTarget.id);
+});
+
+
+>>>>>>> 3e87f1c14078a5c39b36b02d61b49e7a183603f6
