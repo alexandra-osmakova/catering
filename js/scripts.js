@@ -899,6 +899,14 @@ masked_name_second.addEventListener('input', function () {
     }
 })
 
+var masked_name_third = document.getElementById('contact_name');
+masked_name_third.addEventListener('input', function () {
+    var reg = /[^А-Яа-яЁё]/;
+    if (masked_name_third.value.search(reg) != -1) {
+        masked_name_third.value = masked_name_third.value.replace(reg, '');
+    }
+})
+
 var masked_phone_first = document.getElementById('numberPhone');
 masked_phone_first.addEventListener('input', function () {
     var reg = /[^0-9]/;
@@ -912,6 +920,14 @@ masked_phone_second.addEventListener('input', function () {
     var reg = /[^0-9]/;
     if (masked_phone_second.value.search(reg) != -1) {
         masked_phone_second.value = masked_phone_second.value.replace(reg, '');
+    }
+})
+
+var masked_phone_third = document.getElementById('numberPhone1');
+masked_phone_third.addEventListener('input', function () {
+    var reg = /[^0-9]/;
+    if (masked_phone_third.value.search(reg) != -1) {
+        masked_phone_third.value = masked_phone_third.value.replace(reg, '');
     }
 })
 

@@ -1339,7 +1339,7 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
                 </div>
                 <form action="mail.php" method="post" onsubmit="enterIn()">
                     <input type="text" name="name" placeholder="Ваше Имя" id="contact_name" required />
-                    <input type="tel" name="phone" id="numberPhone1" placeholder="Телефон" required />
+                    <input type="tel" name="phone" id="numberPhone1" maxlength="11" placeholder="Телефон" required />
                     <input type="text" name="email" id="contact_email" pattern="^\w+@\w+.\w+$" placeholder="Электронный адрес" />
                     <input type="submit" name="submit" class="offer-btn" value="Отправить заявку" />
                     <p>Отправляя заявку, вы подтверждаете свое согласие
