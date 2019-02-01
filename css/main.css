@@ -565,7 +565,7 @@ a{cursor: pointer;}
 	position: fixed;
 	width: 47.5%;
     height: 440px;
-	top: 25%;
+	top: 20%;
 	left: 26%;
 	z-index: 10000;
 	display: flex;
@@ -738,7 +738,7 @@ a{cursor: pointer;}
 #banket_container, #gala_container, #fur_container, #bbq_container, #candy_container, #fishki_container {display: none;}
 #banket_container.active, #gala_container.active, #fur_container.active, #bbq_container.active, #candy_container.active, #fishki_container.active{display: block;}
 .photo-modal .swiper-slide img, .photo-modal .swiper-slide{height: 100%;width: 100%;}
-.photo-modal .swiper-slide img {width: auto;}
+.photo-modal .swiper-slide img {width: 100%;}
 .photo-modal .swiper-container{height: 100%;width: 100%;background-size: cover;background-position: center;background-repeat: no-repeat;}
 .photo-modal.active{opacity: 1;z-index: 10000}
 .photo-modal .photo-modal-prev{left: -100px;transform: scale(-1,1);background-image: url(../img/arrow.png);width: 50px;height: 30px;background-position: center;background-size: contain;background-repeat: no-repeat;}
@@ -776,7 +776,6 @@ a{cursor: pointer;}
 @media(min-width: 1300px) and (max-width: 1500px) {
 	.slider_conatiner {
 		width: 60%;
-		height: 550px;
 		left: 20%;
 	}
 
@@ -998,7 +997,7 @@ a{cursor: pointer;}
 	#case .next-case p img{width: 50px;}
 	.case-modal-container {width: auto;height: auto;}
 
-	.photo-modal .photo-modal-container{width: 100%;height: 50%}
+	.photo-modal .photo-modal-container{width: 100%;height: 45%;position: absolute; left: 0;right: 0; top:30%; bottom: 25%;}
 	.photo-modal .photo-modal-next, .photo-modal .photo-modal-prev{display: none;}
 	.photo-modal-cls{right: 15px;}
 

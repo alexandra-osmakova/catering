@@ -444,7 +444,9 @@ $(document).ready(function () {
     })
 });
 $('.zay-modal-cls').click(function () {
-    $('#zay-modal-overlay').css("opacity", '0').css("z-index", '-1')
+    $('#zay-modal-overlay').css("opacity", '0').css("z-index", '-1');
+    $('.mobile-main-info').removeClass('invisible_item');
+    $('.bars-btn').removeClass('invisible_item');
     $('body').css("position", 'unset');
 });
 $('.menu-cls').click(function () {
@@ -862,7 +864,9 @@ open_modal.addEventListener('click', function (event) {
         var modal_window = document.getElementById('zay-menu-overlay');
         modal_window.style.opacity = "1";
         modal_window.style.position = "fixed";
-        modal_window.style.zIndex = "100000";
+        modal_window.style.zIndex = "2000002";
+        document.getElementsByClassName('bars-btn')[0].classList.add('invisible_item');
+        document.getElementsByClassName('mobile-main-info')[0].classList.add('invisible_item')
     }
 })
 
@@ -872,7 +876,9 @@ document.body.addEventListener('click', function (event) {
         var modal_window = document.getElementsByClassName('modal_order')[0];
         modal_window.style.opacity = "1";
         modal_window.style.position = "fixed";
-        modal_window.style.zIndex = "100000";
+        modal_window.style.zIndex = "2000002";
+        document.getElementsByClassName('bars-btn')[0].classList.add('invisible_item');
+        document.getElementsByClassName('mobile-main-info')[0].classList.add('invisible_item')
     }
 })
 
