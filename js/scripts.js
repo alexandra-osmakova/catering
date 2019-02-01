@@ -881,3 +881,39 @@ $("span.download-btn.open_modal").on("click", function (e) {
 });
 
 
+var masked_name_first = document.getElementById('nameForm');
+masked_name_first.addEventListener('input', function () {
+
+    var reg = /[^А-Яа-яЁё]/;
+    if (masked_name_first.value.search(reg) != -1) {
+        masked_name_first.value = masked_name_first.value.replace(reg, '');
+    }
+
+})
+
+var masked_name_second = document.getElementById('nameForm2');
+masked_name_second.addEventListener('input', function () {
+    var reg = /[^А-Яа-яЁё]/;
+    if (masked_name_second.value.search(reg) != -1) {
+        masked_name_second.value = masked_name_second.value.replace(reg, '');
+    }
+})
+
+var masked_phone_first = document.getElementById('numberPhone');
+masked_phone_first.addEventListener('input', function () {
+    var reg = /[^0-9]/;
+    if (masked_phone_first.value.search(reg) != -1) {
+        masked_phone_first.value = masked_phone_first.value.replace(reg, '');
+    }
+})
+
+var masked_phone_second = document.getElementById('numberPhone2');
+masked_phone_second.addEventListener('input', function () {
+    var reg = /[^0-9]/;
+    if (masked_phone_second.value.search(reg) != -1) {
+        masked_phone_second.value = masked_phone_second.value.replace(reg, '');
+    }
+})
+
+
+

@@ -1472,8 +1472,8 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
                 <h3 style="font-size: 24px !important;">Оставить заявку на заказ кейтеринга</h3>
                 <h4>Заполните контактную форму и мы с вами свяжемся</h4>
                 <form action="mail.php" method="post">
-                    <input class="name" type="text" name="name" id="nameForm" placeholder="Введите Ваше Имя" required />
-                    <input class="tel" type="tel" name="phone" id="numberPhone" placeholder="Контактный телефон"
+                    <input class="name masked_name" type="text" name="name" id="nameForm" placeholder="Введите Ваше Имя" required />
+                    <input class="tel" type="tel" name="phone" id="numberPhone" maxlength="11" placeholder="Контактный телефон"
                         required />
                     <input class="offer-btn" type="submit" name="submit" value="Оставить заявку" />
                     <p class="open-zay">Отправляя заявку, вы подтверждаете свое согласие с <a href="politikaconf.rtf">политикой
@@ -1489,8 +1489,8 @@ if(/Android [4-6]/.test(navigator.appVersion)) {
                 <h3 style="font-size: 24px !important;">Скачать первичное меню</h3>
                 <h4>Введите контактные данные</h4>
                 <form action="mail.php" id="download" method="post">
-                    <input class="name" type="text" name="name" id="nameForm2" placeholder="Введите Ваше Имя" required />
-                    <input class="tel" type="tel" name="phone" id="numberPhone2" placeholder="Контактный телефон"
+                    <input class="name masked_name" type="text" name="name" id="nameForm2" placeholder="Введите Ваше Имя" required />
+                    <input class="tel" type="tel" name="phone" maxlength="11" id="numberPhone2" placeholder="Контактный телефон"
                         required />
                     <input class="offer-btn" type="submit" name="submit" value="Скачать" />
                     <input type="hidden" id="location" name="location">
