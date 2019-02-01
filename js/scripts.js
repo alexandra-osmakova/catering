@@ -513,9 +513,15 @@ function addAnimation() {
 
 menu_block.addEventListener('click', function (event) {
     var target = event.target;
+    var big_gallery_menu = document.getElementsByClassName('big_gallery_menu');
     if (target.classList.contains('gallery_menu')) {
         switch (target.id) {
             case 'menu_banket':
+                for (var j = 0; j < big_gallery_menu.length; j++) {
+                    big_gallery_menu[j].classList.remove('active')
+                }
+                target.classList.add('active');
+
                 for (var i = 0; i < main_pics_item_page.length; i++) {
                     main_pics_item_page[i].classList.add('invisible_item')
                 }
@@ -526,6 +532,10 @@ menu_block.addEventListener('click', function (event) {
                 }
                 break;
             case 'menu_gala':
+                for (var j = 0; j < big_gallery_menu.length; j++) {
+                    big_gallery_menu[j].classList.remove('active')
+                }
+                target.classList.add('active');
                 for (var i = 0; i < main_pics_item_page.length; i++) {
                     main_pics_item_page[i].classList.add('invisible_item')
                 }
@@ -534,6 +544,10 @@ menu_block.addEventListener('click', function (event) {
 
                 break;
             case 'menu_furshet':
+                for (var j = 0; j < big_gallery_menu.length; j++) {
+                    big_gallery_menu[j].classList.remove('active')
+                }
+                target.classList.add('active');
                 for (var i = 0; i < main_pics_item_page.length; i++) {
                     main_pics_item_page[i].classList.add('invisible_item')
                 }
@@ -544,6 +558,10 @@ menu_block.addEventListener('click', function (event) {
                 }
                 break;
             case 'menu_bbq':
+                for (var j = 0; j < big_gallery_menu.length; j++) {
+                    big_gallery_menu[j].classList.remove('active')
+                }
+                target.classList.add('active');
                 for (var i = 0; i < main_pics_item_page.length; i++) {
                     main_pics_item_page[i].classList.add('invisible_item')
                 }
@@ -554,6 +572,10 @@ menu_block.addEventListener('click', function (event) {
                 }
                 break;
             case 'menu_coctail':
+                for (var j = 0; j < big_gallery_menu.length; j++) {
+                    big_gallery_menu[j].classList.remove('active')
+                }
+                target.classList.add('active');
                 for (var i = 0; i < main_pics_item_page.length; i++) {
                     main_pics_item_page[i].classList.add('invisible_item')
                 }
@@ -564,6 +586,10 @@ menu_block.addEventListener('click', function (event) {
                 }
                 break;
             case 'menu_candy':
+                for (var j = 0; j < big_gallery_menu.length; j++) {
+                    big_gallery_menu[j].classList.remove('active')
+                }
+                target.classList.add('active');
                 for (var i = 0; i < main_pics_item_page.length; i++) {
                     main_pics_item_page[i].classList.add('invisible_item')
                 }
@@ -574,6 +600,10 @@ menu_block.addEventListener('click', function (event) {
                 }
                 break;
             case 'menu_fishki':
+                for (var j = 0; j < big_gallery_menu.length; j++) {
+                    big_gallery_menu[j].classList.remove('active')
+                }
+                target.classList.add('active');
                 for (var i = 0; i < main_pics_item_page.length; i++) {
                     main_pics_item_page[i].classList.add('invisible_item')
                 }
@@ -676,14 +706,15 @@ document.getElementById('slider_btn_next').addEventListener('click', function ()
 
 
 function slideChange() {
-    var x = 0; 
-    var timerId = setInterval(function() {
+    var x = 0;
+    var timerId = setInterval(function () {
         modal_slide.classList.remove('slider_move')
         x++
     }, 500)
 
-    setTimeout(function() {
-        clearInterval(timerId);}, 550)
+    setTimeout(function () {
+        clearInterval(timerId);
+    }, 550)
 }
 
 var slider_conatiner_small = document.getElementById('slider_conatiner_small');
@@ -693,7 +724,7 @@ var slider_pagination = document.getElementsByClassName('slider_pagination')[0];
 window.onload = function () {
     if (document.documentElement.clientWidth < 600) {
         activ_pic_arr = banket_pics;
-        craetePagination() 
+        craetePagination()
         modal_slide = document.createElement('img');
         modal_slide.src = banket_pics[slider_start_index];
         slider_conatiner_small.insertBefore(modal_slide, slider_nav);
@@ -766,58 +797,58 @@ gallery_dropdown.addEventListener('click', function (event) {
     if (target.classList.contains('gallery_menu')) {
         switch (target.id) {
             case 'menu_banket_small':
-            activ_pic_arr = banket_pics;
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination();
+                activ_pic_arr = banket_pics;
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination();
                 break;
             case 'menu_gala_small':
-            activ_pic_arr = gala_pics;
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination();
+                activ_pic_arr = gala_pics;
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination();
                 break;
             case 'menu_furshet_small':
-            activ_pic_arr = furshet_pics;
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination()
+                activ_pic_arr = furshet_pics;
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination()
                 break;
             case 'menu_bbq_small':
-            activ_pic_arr = bbq_pics;
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination();
+                activ_pic_arr = bbq_pics;
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination();
                 break;
             case 'menu_banket_small':
-            activ_pic_arr = banket_pics;
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination();
+                activ_pic_arr = banket_pics;
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination();
                 break;
             case 'menu_banket_small':
-            activ_pic_arr = banket_pics;
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination();
+                activ_pic_arr = banket_pics;
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination();
                 break;
             case 'menu_cocktail_small':
-            activ_pic_arr = [];
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination();
+                activ_pic_arr = [];
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination();
                 break;
             case 'menu_candy_small':
-            activ_pic_arr = candy_pics;
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination();
+                activ_pic_arr = candy_pics;
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination();
                 break;
             case 'menu_fishki_small':
-            activ_pic_arr = fishki_pics;
-            modal_slide.src = activ_pic_arr[slider_start_index];
-            slider_pagination.innerHTML = '';
-            craetePagination()
+                activ_pic_arr = fishki_pics;
+                modal_slide.src = activ_pic_arr[slider_start_index];
+                slider_pagination.innerHTML = '';
+                craetePagination()
                 break;
         }
     }
@@ -825,24 +856,22 @@ gallery_dropdown.addEventListener('click', function (event) {
 
 var open_modal = document.getElementById('services');
 
-open_modal.addEventListener('click', function(event) {
+open_modal.addEventListener('click', function (event) {
     var target = event.target;
-    if(target.classList.contains('open_modal')) {
+    if (target.classList.contains('open_modal')) {
         var modal_window = document.getElementById('zay-menu-overlay');
-        modal_window.style.opacity="1";
-        modal_window.style.position="fixed";
-        modal_window.style.zIndex="100000";
+        modal_window.style.opacity = "1";
+        modal_window.style.position = "fixed";
+        modal_window.style.zIndex = "100000";
     }
 })
 
-document.body.addEventListener('click', function(event) {
+document.body.addEventListener('click', function (event) {
     var target = event.target;
-    if(target.classList.contains('modal-opn-order')) {
+    if (target.classList.contains('modal-opn-order')) {
         var modal_window = document.getElementsByClassName('modal_order')[0];
-        modal_window.style.opacity="1";
-        modal_window.style.position="fixed";
-        modal_window.style.zIndex="100000";
+        modal_window.style.opacity = "1";
+        modal_window.style.position = "fixed";
+        modal_window.style.zIndex = "100000";
     }
 })
-
-
